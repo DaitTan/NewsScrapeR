@@ -38,7 +38,7 @@ testData = data.frame()
 for (pageIterate in 1:last){
   
   
-  # Link of every page from which we will scrape data
+  # Extracting HTML of page from which we will scrape data
   page = read_html(pages[pageIterate])
   
   # Extracting all articles on the page
@@ -78,7 +78,7 @@ for (pageIterate in 1:last){
     length(rowInf) <- 4
     
     # Adding data to dataFrame
-    newData = rbind(newData2,t(as.matrix(rowInf)))
+    testData = rbind(testData,t(as.matrix(rowInf)))
     message("Article ", iterate)
     
     # Resetting the rowInf for next article
@@ -95,5 +95,6 @@ for (pageIterate in 1:last){
 colnames(testData) <- c("link", "headlines", "timeStamp", "text")
 
 # Saving DataFrame
-write.csv(testData, "moneyControlData.csv",row.names = FALSE)
+
+#write.csv(testData, "moneyControlData.csv",row.names = FALSE)
 
