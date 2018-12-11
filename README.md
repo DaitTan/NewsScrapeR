@@ -12,3 +12,8 @@ The current contributors are:
 2) Data Cleaning/ Preprocessing
 3) Data Analysis
 4) Classification / Prediction / Clustering
+
+## Data Sets
+
+The link for datasets is
+https://drive.google.com/drive/folders/1GKD81RTCDBEpVvxnlgbYlXtAlI4kOMgB?usp=sharing
