@@ -86,5 +86,6 @@ for(pageIterate in 1:length(pages)){
 colnames(testData) <- c("link", "headlines", "timeStamp", "text")
 
 # Saving DataFrame
-write.csv(testData, "TOIData.csv",row.names = FALSE)
+
+#write.csv(testData, "TOIData.csv",row.names = FALSE)
 
