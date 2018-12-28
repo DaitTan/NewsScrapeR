@@ -1,5 +1,5 @@
 library(rvest)
-
+library(stringr)
 
 
 page <- read_html("https://www.marketwatch.com/search?q=Gold&m=Keyword&rpp=100&mp=806&bd=false&rs=true")
@@ -17,11 +17,13 @@ for(i in 1:670){
   news <- articles %>% html_nodes('div.searchresult') %>% html_nodes('a') %>% html_text()
   
   marketsWatch <- rbind(marketsWatch, as.data.frame(cbind(date,href,news)))
+  message("Page: ", i ," Count= ", length(date))
   date = NULL
   href = NULL
   news = NULL
   
-  message(i)
-}
   
+}
+
+write.csv(marketsWatch,"marketsWatch.csv",row.names = FALSE)
   
