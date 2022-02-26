@@ -1,19 +1,3 @@
-# IIM-Project
-We are currently working on a research project at IIM Ahmedabad under the guidance of Prof. Ankur Sinha.
-The main aim of the project is analyse the sentiments (from news, twitter etc.) and it's effect on the commodity prices (mostly Gold).
+# New Items Scraper
+In this project, we have written scripts to scrape news items from various news websites. This code is speicifically for new related to "Gold".
 
-The current contributors are:
-1) Preeti Suman
-2) Tanmay Khandait
-
-## Workflow
-
-1) Data Scraping
-2) Data Cleaning/ Preprocessing
-3) Data Analysis
-4) Classification / Prediction / Clustering
-
-## Data Sets
-
-The link for datasets is
-https://drive.google.com/drive/folders/1GKD81RTCDBEpVvxnlgbYlXtAlI4kOMgB?usp=sharing
